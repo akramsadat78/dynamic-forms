@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev:server": "cd client && yarn build && cd .. && yarn start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node  server.js",
     "debug": "nodemon --inspect server.js",
