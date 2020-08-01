@@ -8,8 +8,7 @@ const logger = require('morgan');
 var cors = require('cors');
 app.use(cors());
 var items = require('./descriptor.json');
-//const PORT = process.env.PORT || 5000;
-app.set('port', process.env.PORT || 5000);
+const PORT = process.env.PORT || 5000;
 
 /* app.use */
 app.use(logger('dev'));
@@ -62,6 +61,4 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-app.listen(app.get('port'));
-
-//app.listen(PORT);
+app.listen(PORT);
