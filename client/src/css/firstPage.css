@@ -1,0 +1,47 @@
+/* data */
+
+#name {
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+
+/* border */
+
+#border {
+    border: solid rgb(12, 6, 7);
+    list-style: none;
+    margin: auto;
+    width: 90%;
+    height: 470px;
+    direction: ltr;
+    overflow: auto;
+    border-radius: 1%;
+}
+
+#border li:hover {
+    background-color: rgb(46, 193, 230);
+    cursor: pointer;
+}
+
+#border li:active {
+    background-color: rgb(32, 127, 151);
+    cursor: pointer;
+}
+
+#border li {
+    background: #cce5ff;
+    margin: 1%;
+    padding: 1%;
+    list-style: none;
+    border-radius: 10px;
+}
+
+#border li a {
+    text-decoration: none;
+    font-size: larger;
+    color: #000;
+}
