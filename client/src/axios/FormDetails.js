@@ -42,13 +42,12 @@ export default class FormDetails extends React.Component {
             const { error, isLoaded, fields } = this.state;
 
             if (error) {
-                return <div > Error: { error.message } < /div>;
+                return <div > Error: { error.message } </div>;
             } else if (!isLoaded) {
-                return <div > Loading... < /div>;
+                return <div > Loading... </div>;
             } else {
 
-                return ( <
-                    ul >
+                return ( < ul >
 
                     { /* component of UserComponent for showing user's form and send imformations to backend*/ } {
                         fields.map((item, index) => ( <
@@ -59,8 +58,7 @@ export default class FormDetails extends React.Component {
                                 ))
                         }
 
-                        <
-                        /ul>
+                        </ul>
                     );
                 }
             }

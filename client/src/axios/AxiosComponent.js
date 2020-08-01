@@ -44,13 +44,12 @@ export default class AxiosComponent extends React.Component {
         render() {
                 const { error, isLoaded, items } = this.state;
                 if (error) {
-                    return <div > Error: { error.message } < /div>;
+                    return <div > Error: { error.message } </div>;
                 } else if (!isLoaded) {
-                    return <div > Loading... < /div>;
+                    return <div> Loading... </div>;
                 } else {
 
-                    return ( <
-                        Router >
+                    return ( <Router >
 
                         { /* component of FormsTitle for showing titles's link */ } <
                         Route exact path = { `/` }
@@ -67,8 +66,7 @@ export default class AxiosComponent extends React.Component {
                                         ))
                                 }
 
-                                <
-                                /Router>
+                                </Router>
                             );
                         }
                     }
