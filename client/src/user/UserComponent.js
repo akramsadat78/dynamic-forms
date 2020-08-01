@@ -27,7 +27,7 @@ export default class UserComponent extends Component {
         alert("form information enterd :) ")
 
         axios
-            .post('http://localhost:3001/getData', inputFields)
+            .post('http://localhost:5000/getData', inputFields)
             .catch(err => {
                 console.error(err);
             })
